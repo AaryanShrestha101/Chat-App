@@ -1,0 +1,209 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.user-info {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px; /* Add margin to give space below the messages */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin to give space above the input */
+}
+
+.message-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1; /* Allow the input to grow */
+  margin-right: 10px;
+}
+
+.send-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: #45a049;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.login-button {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #357ae8;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message-box {
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* Add margin between message boxes */
+  max-width: 70%; /* Set a maximum width for the message box */
+  word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+  overflow-wrap: break-word; /* Alternative property for better word wrapping */
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Add margin below the user info */
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.message-content {
+  display: flex;
+}
+
+.message-text {
+  margin-left: 5px;
+}
+
+.current-user .message-text {
+  text-align: right; /* Align text to the right for messages sent by the current user */
+}
+
+.other-user .message-text {
+  text-align: right; /* Align text to the left for messages sent by other users */
+  color: black;
+}
+
+.right .message-box {
+  justify-content: flex-end;
+}
+
+.left .message-box {
+  justify-content: flex-start;
+}
+
+.current-user {
+  background-color: #4caf50;
+}
+
+.other-user {
+  background-color: #ccc;
+  color: black;
+}
+.username-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px; /* Increase font size */
+  outline: none; /* Remove default outline */
+}
+
+.username-input:focus {
+  border-color: #4caf50; /* Change border color when focused */
+}
